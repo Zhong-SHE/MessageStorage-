@@ -1,13 +1,33 @@
-# Sample Hardhat Project
+# MessageStorage Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+A project that demonstrates the creation and deployment of a Solidity smart contract (MessageStorage) on the Ethereum Sepolia testnet, along with a backend API built in Node.js to interact with the deployed contract.
 
-Try running some of the following tasks:
+Technologies Used
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+Solidity: Smart contract development
+
+Ethereum: Sepolia test network for deployment
+
+Hardhat: Ethereum development framework
+
+Ethers.js: Ethereum interaction library
+
+Node.js/Express: Backend API
+
+Infura: Ethereum RPC provider
+
+dotenv: Environment variable management
+
+Installation
+Prerequisites
+Node.js (v14+)
+
+Hardhat
+
+Infura Project ID
+
+
+API Endpoints
+POST /api/store-message: Store a message on the blockchain.
+
+GET /api/retrieve-message: Retrieve the stored message from the blockchain.
